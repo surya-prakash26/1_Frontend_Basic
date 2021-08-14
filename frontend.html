@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions Boxing Club</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            color: whitesmoke;
+            margin: 36px 0px;
+            padding: 0px;
+            background: url('https://cdn.pixabay.com/photo/2016/07/13/16/00/box-1514845_960_720.jpg');
+
+        }
+
+        .left {
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 15px;
+        }
+
+        .left img {
+            width: 52px;
+            margin-left: 54px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 20px;
+            font-weight: bold;
+            color: brown;
+        }
+
+        .center {
+            display: block;
+            margin: 15px auto;
+            width: 40%;
+            /* border: 2px solid yellowgreen; */
+        }
+
+        .right {
+            position: absolute;
+            right: 20px;
+            top: 33px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .right .search {
+            font-weight: bold;
+            text-align: center;
+            background-color: whitesmoke;
+            padding: 2px;
+            border-radius: 20px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .navbar li a {
+            padding: 15px 15px;
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            color: brown;
+        }
+
+        .container {
+            border: 2px solid whitesmoke;
+            border-radius: 50px;
+            width: 33%;
+            margin: 269px 93px;
+            padding: 8px;
+        }
+
+        .group input {
+            text-align: center;
+            border-radius: 20px;
+            font-weight: bold;
+            width: 216px;
+            border: 2px solid black;
+            
+            display: block;
+            margin: 8px auto;
+            padding: 8px;
+        }
+        .group input:hover{
+            background-color: wheat;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            font-weight: bolder;
+            border-radius: 5px;
+            margin: 20px auto;
+            width: 60px;
+            border: 2px solid whitesmoke
+        }
+
+        .container button:hover {
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!-- for logo -->
+        <div class="left">
+            <img src="https://cdn.pixabay.com/photo/2014/03/25/16/35/boxing-gloves-297499_960_720.png" alt="">
+            <div>Champions Boxing Club</div>
+        </div>
+        <!-- for navbar  -->
+        <div class="center">
+            <ul class="navbar">
+                <li> <a href="">Home</a> </li>
+                <li> <a href="">About us</a></li>
+                <li> <a href="">Diet Plan</a></li>
+                <li> <a href="">FAQ</a></li>
+                <li> <a href="">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- for search and buttons  -->
+        <div class="right">
+            <input type="text" class="search" id="search" placeholder="search the website">
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Grab your passes now!</h1>
+        <form action="noaction.php" class="details">
+            <div class="group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="group">
+                <input type="number" placeholder="Age">
+            </div>
+            <div class="group">
+                <input type="text" placeholder="phone number">
+            </div>
+            <div class="group">
+                <input type="text" placeholder="Address">
+            </div>
+            <button>submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
